@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="text-align: center">
+<h2>Tyoe anthing slowly</h2>
+<textarea style="width: 200px ; height: 100px" oninput="change()" id ="nd"></textarea>
+</div>
+<script>
+    let str=""
+    let s = "TÔI RẤT DỄ THƯƠNG!!!!"
+    let i =0;
+    function change(){
+        if (i >= s.length){
+            i = 0;
+            str = ""
+        }
+        else {
+            str += s[i];
+            i++;
+        }
+        document.getElementById("nd").value = str;
+    }
+</script>
+</body>
+</html>
